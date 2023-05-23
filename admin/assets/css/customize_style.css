@@ -1,0 +1,15 @@
+.mandetory_field{
+    color: red;
+    
+}
+
+.panel{
+    overflow-x: auto!important;
+    max-width: 100%!important;
+    border: 1px solid #d0d4d7!important;
+}
+
+.btn-block{
+    width: 100%!important;
+   
+}

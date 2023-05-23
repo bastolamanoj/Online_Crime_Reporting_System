@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* top part css start here */
+.top-part{
+    background-color: rgb(11, 11, 15);
+    height: 10vh;
+    position: fixed;
+    top: 0%;
+    left: 21.5%;
+    z-index: 2;
+    width: 78%;
+    padding-top: 10px;
+    
+}
+.top-part span, .top-part p {
+    color:rgb(249, 240, 240);
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 20px;  
+}
+.top-part  span{
+    color: white;
+    float: left;
+    display: none;
+}
+/* top part css end here */
+
+/* sidebar menu css section start here */
+.container1{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+ .mysidebar1{
+    flex-basis: 20%;
+    max-width: 20%;
+    padding: 20px 0;
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 3px;
+    left: 0%;
+    box-shadow: 2px 2px 2px rgb(103, 98, 98);
+}
+/* top container part start */
+.sidebar .top-container1{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+.top-container1 .profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.top-container1 .profile img{
+    /* width: 100%; */
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.top-container1 .bio span{
+    font-weight: bold;
+    color: black;
+}
+.top-container1 .bio .buttons {
+    padding: 2em 1em;
+}
+.top-container1 .bio .buttons a {
+    padding: 10px 10px;
+}
+.top-container1 .bio a:hover{
+    background-color: rgb(168, 173, 177);
+}
+
+/* dashboard part */
+.dashboard-part{
+    margin: 15px 0;
+ 
+}
+.dashboard-part h5{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  padding: 15px 10px;
+}
+
+/* sidebar items section  */
+.items-part .items{
+    list-style-type: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+   
+}
+ul{
+    padding-left: 0px;
+}
+.items  li{
+    padding: 10px 15px;
+    border-bottom: 0.5px solid rgb(185, 180, 180);
+    /* background-color: rgb(30, 30, 210); */
+}
+.items  li:hover{
+    background-color: rgb(186, 186, 197);
+}
+.items li:active {
+    background-color: rgb(53, 53, 227);
+}
+.items li:active a {
+   color:aliceblue
+}
+
+
+  
+
+/* sidebar menu css section end here */
+
+/* main section css start here */
+
+/* main section css end here */
+.main-section1{
+    flex-basis: 75%;  
+    padding-top: 2px; 
+}
+
+.main-section1 h2{
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+.main-section1 header{
+    padding: 20px 10px;
+}
+/* grid-box color section start here */
+.grid-box{
+    display: grid;
+    /* grid-template-columns: auto; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 12px;
+}
+.grid-box .grid-item{
+    background-color: rgb(235, 34, 34);
+    padding: 15px 10px;
+    color: white;
+    font-size: 30px;
+}
+.grid-box .grid-item h4{
+    /* text-align: center; */
+    padding-top: 15px;
+}
+.grid-item .row{
+    display: flex;
+    justify-content: space-between;
+}
+#grid-item2{
+    background-color: rgb(42, 42, 134);
+}
+#grid-item3{
+    background-color: rgb(19, 107, 81);
+}
+#grid-item4{
+    background-color: rgb(198, 171, 47);
+}
+
+/* region and feeds section css */
+/* .region-section{
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 30px;
+    
+}
+.region-part img{
+    width: 100%;
+}
+.feeds-part table {
+    width: 100%;
+}
+.feeds-part table tr:nth-child(odd){
+    background-color: #ece5e5;
+}
+.feeds-part table tr td{
+    padding: 10px 30px ;
+    border: none;
+} */
+/* .region-section .region-part{
+    
+} */
+/* region and feeds section css */
+/* .general-status{
+    padding: 10px 10px;
+    margin: 20px 0;
+}
+.general-status .gray-bar{
+    background-color: gray;
+    margin: 15px 0;
+  
+} */
+/* .general-status .gray-bar{
+    padding: 20px 10px;
+    background-color: gray;
+    margin: 15px 0;
+} */
+
+/* countries section start here */
+/* .countries table{
+    width: 100%;
+    border: 1px solid rgb(155, 149, 149);
+}
+.countries table,tr, td{
+    border-top: 1px solid rgb(181, 166, 166);
+    border-collapse: collapse;
+}
+.countries table tr td{
+    padding: 18px 10px;
+}
+.countries table tr:nth-child(even){
+    background-color: rgb(222, 215, 215);
+}
+.countries table tr:hover{
+    background-color: rgb(113, 103, 103);
+    color: white;
+}
+.btn1{
+    margin: 20px 0;
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: rgb(34, 30, 30);
+    color: white;
+}
+.btn1:hover{
+    background-color: rgb(164, 168, 172);
+    color: black;
+
+} */
+/* countries section end here */
+
+/* recent user section start here */
+/* .recent-user{
+    padding: 0 20px; 
+}
+.recent-user .users{
+    list-style-type: none;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.users .user img{
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  
+}
+
+.users .user p{
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.users .user{
+    padding: 15px ;
+    border-bottom: 1px solid rgb(223, 213, 213);
+    display: flex;
+    flex-direction: row;
+} */
+
+/* recent user section end here */
+
+/* recent comments section */
+/* .recent-comment{
+    padding: 0% 10px;
+    margin: 20px 0;
+}
+.recent-comment .row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px 0;
+}
+
+.recent-comment .row img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.recent-comment .row .bio-section h3{
+    margin: 10px 0;
+    
+}
+recent comments section */
+
+
+/* footer part */
+.footer-part{
+    padding: 10px 20px ;
+    margin: 20px 0;
+    display: flex;
+    background-color: #616161;
+    color: #fff;
+}
+.footer-part .footer-item{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-part .footer-item h3{
+    padding: 10px 5px;
+    margin-right: 33px;
+}
+.footer-part .demographic h3{
+  border-bottom: 5px solid red;
+}
+.footer-part .system h3{
+  border-bottom: 5px solid rgb(95, 229, 23);
+}
+.footer-part .target h3{
+  border-bottom: 5px solid rgb(38, 18, 220);
+}
+.footer-part .footer-item p{
+    padding: 5px 5px;
+}
+
+/* footer section start */
+.footer-section{
+    margin: 10px 0px;
+    background-color: rgb(221, 224, 227);
+    padding: 20px;
+}
+
+/* code for responsive */
+@media screen and (max-width:900px) {
+    #mySidebar{
+        display: none;
+    }
+    
+    .container1 .main-section1{
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+    }
+   
+    .top-part  span{
+        float: left;
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:580px) {
+  .grid-box{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+  }
+
+.footer-part{
+    flex-direction: column;
+}
+
+    
+}
